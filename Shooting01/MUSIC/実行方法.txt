@@ -1,0 +1,40 @@
+Arkos Tracker2 開始時の設定は、
+タイトル記載
+周波数をカスタムの60Hzを入力
+PSGを、AYの1773400(MSX)にする
+
+
+
+
+
+Arkos Tracker2 の File→Export から出力
+音楽は　AKGで　効果音は　AKXで出力
+BGM.asm
+BGM_playerconfig.asm
+SOUND.asm
+SOUND_playerconfig.asm
+
+
+https://github.com/EdouardBERGE/rasm/releases
+からダウンロードして配置
+rasm_x64.exe
+
+
+Arkos Tracker2 から持ってくる
+PlayerAkg.asm
+PlayerAkg_SoundEffects.asm
+Disark.exe
+
+
+
+
+
+.\rasm_x64 CompileAT2Files.asm -o CompileAT2Files -s -sl -sq
+
+.\Disark CompileAT2Files.bin temp.asm --symbolFile CompileAT2Files.sym
+
+
+temp.asm を組み込む
+
+
+

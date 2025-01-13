@@ -1,0 +1,4 @@
+10 CLEAR200,&HE000
+20 DEF USR=&H9000
+30 BLOAD "program.bin"
+40 A=USR(0)
